@@ -730,9 +730,18 @@
                                     <real value="3.4028234663852886e+38"/>
                                 </customSpacing>
                             </stackView>
+                            <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oAv-Xd-ZjC">
+                                <rect key="frame" x="18" y="226" width="112" height="26"/>
+                                <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="0XG-nv-XzU">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="10M-pk-UUM"/>
+                                </popUpButtonCell>
+                            </popUpButton>
                         </subviews>
                     </view>
                     <connections>
+                        <outlet property="accountPopUpBtn" destination="oAv-Xd-ZjC" id="Ihl-oO-oRg"/>
                         <outlet property="nameTextField" destination="KWf-R0-9gi" id="Zkg-Qk-6wo"/>
                         <outlet property="welcomeLabel" destination="yNU-VS-RS0" id="r0T-Wc-hHk"/>
                     </connections>
